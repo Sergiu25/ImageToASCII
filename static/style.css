@@ -1,0 +1,123 @@
+/* Reset și fonturi */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #ece9e6, #ffffff);
+    padding: 40px 20px;
+    color: #333;
+}
+
+/* Titlu */
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #2c3e50;
+}
+
+/* Container principal */
+.container {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 900px;
+    margin: 0 auto;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* Grup de formă */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #34495e;
+}
+
+input[type="file"],
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dcdfe6;
+    border-radius: 8px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #3498db;
+    outline: none;
+}
+
+/* Butoane */
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+/* Rezultat */
+.result {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+/* Imaginea originală și ASCII */
+.original-image, .ascii-output {
+    flex: 1 1 45%;
+}
+
+.original-image img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h3 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    color: #2c3e50;
+}
+
+/* ASCII output */
+.ascii-preview {
+    background-color: #000;
+    color: #ffffff;
+    font-family: 'Courier New', monospace;
+    font-size: 6px;
+    line-height: 6px;
+    white-space: pre;
+    overflow-x: auto;
+    padding: 15px;
+    border-radius: 8px;
+    max-height: 500px;
+    box-shadow: inset 0 0 10px rgba(0, 255, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .result {
+        flex-direction: column;
+    }
+}
